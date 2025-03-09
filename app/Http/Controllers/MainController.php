@@ -133,7 +133,7 @@ class MainController extends Controller
         $date = $request->has('date') ? Carbon::parse($request->date) : today();
         $type = $request->has('type') ? $request->type : 'daily';
         $employee = $request->has('employee') ? $request->employee : "PNS";
-        $fileName = "Daftar Hadir {TIPE} Kantor Camat Balaesang. {TIPE}";
+        $fileName = "Daftar Hadir {TIPE} Kantor Camat. {TIPE}";
         $fileName = [
             'daily' => Str::replaceArray("{TIPE}",  ["Pegawai", $date->translatedFormat('l, d F Y')], $fileName),
             'monthly' => Str::replaceArray("{TIPE}",  ["Pegawai", "Bulan " . $date->translatedFormat('F Y')], $fileName),

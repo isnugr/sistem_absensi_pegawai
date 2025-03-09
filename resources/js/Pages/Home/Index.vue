@@ -5,7 +5,7 @@
     <p class="mb-4 text-3xl font-bold text-center">
       Sistem Absensi Pegawai Online
       <br />
-      Kantor Camat Balaesang
+      Kantor Camat
     </p>
     <div class="flex flex-col justify-center mt-4" v-if="holiday.is_holiday">
       <p class="text-center text-muted">Libur Nasional</p>
