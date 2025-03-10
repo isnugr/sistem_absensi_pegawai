@@ -236,25 +236,6 @@
         <p>Tidak ada data Izin, Dinas Luar, & Cuti</p>
       </div>
     </div>
-    <div class="flex flex-col mt-16 text-sm text-center">
-      <img
-        :src="route('landing') + 'assets/logo.png'"
-        style="width: 5%"
-        class="ml-auto mr-auto"
-      />
-      <p class="text-gray-400">
-        Copyright &copy; {{ new Date().getFullYear() }} -
-        <span class="text-blue-500 hover:underline hover:text-blue-700">
-          <a href="https://banuacoders.com">Banua Coders</a>
-        </span>
-        by
-        <a
-          class="text-blue-500 hover:underline hover:text-blue-700"
-          href="https://linkedin.com/in/ryanaidilp"
-          >Fajrian Aidil Pratama</a
-        >
-      </p>
-    </div>
     <viewer :images="images" @inited="inited" class="viewer" ref="viewer">
       <template slot-scope="scope">
         <img v-for="src in scope.images" :src="src" :key="src" class="hidden" />
